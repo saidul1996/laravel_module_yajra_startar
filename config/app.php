@@ -159,7 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -183,6 +183,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Module' => Nwidart\Modules\Facades\Module::class,
     ])->toArray(),
 
 ];
